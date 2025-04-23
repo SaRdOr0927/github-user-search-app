@@ -1,0 +1,286 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+    background: #F6F8FF;
+}
+.site-headr {
+    display: flex;
+    width: 730px;
+    justify-content: space-between;
+}
+.dark-and-light {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    cursor: pointer;
+}
+.site-title {
+    color: #222731;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.dark-and-light_text {
+    color: #697C9A;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+
+/* Search */
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background: #FEFEFE;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+  height: 69px;
+  width: 730px;
+}
+.search-icon {
+  font-size: 18px;
+  color: #007bff;
+  margin-right: 23px;
+  margin-left: 32px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+  font-family: "Space Mono";
+  flex: 1;
+  font-size: 14px;
+  color: #000;
+  background: none;
+}
+.search-boxDark {
+    background: #1E2A47;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    height: 69px;
+    width: 730px;
+}
+.search-boxDark input {
+    color: #fff;
+    font-family: "Space Mono";
+    border: none;
+    outline: none;
+    font-family: "Space Mono";
+    flex: 1;
+    font-size: 14px;
+    background: none;
+}
+.search-boxDark input::placeholder {
+    color: #fff;
+  }
+.search-box input::placeholder {
+    color: #000;
+}
+.search-box button {
+  width: 106px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #0079FF;
+  color: #FFF;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  margin-right: 10px;
+  transition: .5s;
+  cursor: pointer;
+}
+.search-boxDark button {
+    width: 106px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #0079FF;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin-right: 10px;
+    transition: .5s;
+    cursor: pointer;
+  }
+.search-box button:hover {
+  background-color: #60ABFF;
+}
+.search-boxDark button:hover {
+    background-color: #60ABFF;
+  }
+/* site-card */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.site-card {
+    width: 730px;
+    height: 419px;
+    margin-top: 24px;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    display: flex;
+    column-gap: 37px;
+}
+.card-img {
+    margin-bottom: 200px;
+    margin-left: 48px;
+}
+.About-profile-owner {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 44px;
+}
+.Name {
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.link {
+    color: #0079FF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Profile-owners-birth {
+    color: #697C9A;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.bio-text {
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+.Followers-card {
+    width: 480px;
+    height: 85px;
+    border-radius: 10px;
+    background: #F6F8FF;
+    display: flex;
+    column-gap: 99px;
+    align-items: center;
+}
+.span-1 {
+    margin-left: 32px;
+}
+.Followers-card_name {
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.Followers-card_number {
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+.icon {
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Profile-abount {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+}
+.Profile-abount  {
+    display: flex;
+}
+.Profile-abount-span_1 {
+    display: flex;
+    column-gap: 120px;
+    
+}
+.Profile-abount-span_2 {
+    display: flex;
+    column-gap: 62px;
+}
+.Profile-abount-span_1 span {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 19px;
+}
+.Profile-abount-span_2 span {
+    display: flex;
+    column-gap: 16px;
+}
+
+
+/* Dark */
+
+.site-card_Dark {
+    width: 730px;
+    height: 419px;
+    margin-top: 24px;
+    border-radius: 15px;
+    background: #1E2A47;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    display: flex;
+    column-gap: 37px;
+}
+.Followers-card_Dark {
+    width: 480px;
+    height: 85px;
+    border-radius: 10px;
+    background: #141D2F;
+    display: flex;
+    column-gap: 99px;
+    align-items: center;
+}
+.Followers-card_Dark span p {
+    color: #fff;
+}
+.Followers-card_Dark span h1 {
+    color: #fff;
+}
