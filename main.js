@@ -60,19 +60,31 @@ DarkAndLight.addEventListener('click', () => {
 const btn = document.getElementById('Search-btn');
 const SearchInput = document.getElementById('search-input');
 
-SearchInput.addEventListener('input', () => {
-    let inpVal = SearchInput.value.toLowerCase()
-    console.log(inpVal)
-    async function SEARCh(params) {
-        try {
-            const response = await fetch(`https://api.github.com/users/${inpVal}`)
-            if(response.status === 200) {
-                const data = await response.json()
-                console.log(data)
-            }
-        } catch (error) {
-            console.log('Xatolik',error)
-        }
-    }
-    SEARCh()
-})
+
+btn.addEventListener("click", () => {
+  usernameinput = SearchInput.value.trim();
+  UserName();
+});
+
+async function UserName() {
+  try {
+    const response = await fetch(`https://api.github.com/users/${usernameinput}`);
+    const data = await response.json();
+
+    document.querySelector(".card-img").src = data.avatar_url;
+    document.querySelector(".Name").textContent = data.name || "Ism Topilmadi";
+    document.querySelector(".link").textContent = "@" + data.login;
+    document.querySelector(".link").href = data.html_url;
+    document.querySelector(".Profile-owners-birth").textContent = "Joined " + new Date(data.created_at).toDateString();
+    document.querySelector(".bio-text").textContent = data.bio || "Bio Topilmadi";
+
+    let numbers = document.querySelectorAll(".Followers-card_number");
+    numbers[0].textContent = data.public_repos;
+    numbers[1].textContent = data.followers;
+    numbers[2].textContent = data.following;
+
+  } catch (err) {
+    alert('Foydalanuvchi topilmadi!');
+    console.log(err);
+  }
+}

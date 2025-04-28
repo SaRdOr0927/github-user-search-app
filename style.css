@@ -145,8 +145,13 @@ a:hover {
     column-gap: 37px;
 }
 .card-img {
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
     margin-bottom: 200px;
     margin-left: 48px;
+    margin-top: 48px;
+
 }
 .About-profile-owner {
     width: 480px;
